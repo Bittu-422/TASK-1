@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Category Selector -->
+   <h1>Welcome to Interactive Quiz App</h1>
+  <div class="start-screen">
+    <label for="category-select">Choose Category:</label>
+    <select id="category-select">
+      <option value="" disabled selected>Select</option>
+      <option value="Programming">Programming</option>
+      <option value="General Knowledge">General Knowledge</option>
+    </select>
+    <button id="start-btn">Start Quiz</button>
+    <p id="last-score"></p>
+  </div>
+
+  <!-- Quiz Area -->
+  <div class="quiz-container" style="display: none;">
+    <div id="timer" class="timer">Time Left: 10s</div>
+    <div id="question" class="question"></div>
+    <div class="answers" id="answers"></div>
+    <div id="score"></div>
+    <button id="next-btn">Next Question</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+<footer>
+        <a href="#"> FAQ</a>
+        <a href="#"> Contac Us</a>
+        <a href="#"> Terms of Use</a>
+        <a href="#"> Privacy Policy</a>
+        <a href="#"> Refund Policy</a>
+        <a href="#"> &copy; 2025 | Interactive Quiz App</a>
+    </footer>
+
+</html>
